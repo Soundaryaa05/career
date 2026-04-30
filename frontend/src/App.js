@@ -9,7 +9,7 @@ function App() {
  const handleClick = async () => {
   try {
     const res = await axios.post(
-      "https://career-lime.vercel.app/",
+    "https://career-backend-v7iz.onrender.com/api/career/recommend",
       { skills: skills.split(",") }
     );
     setResult(res.data);
