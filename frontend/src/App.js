@@ -6,13 +6,18 @@ function App() {
   const [skills, setSkills] = useState("");
   const [result, setResult] = useState([]);
 
-  const handleClick = async () => {
+ const handleClick = async () => {
+  try {
     const res = await axios.post(
-      "https://career-backend-v7iz.onrender.com",
+      "https://career-lime.vercel.app/",
       { skills: skills.split(",") }
     );
     setResult(res.data);
-  };
+  } catch (err) {
+    console.log(err);
+    alert("Error connecting to server");
+  }
+};
 
   return (
     <div className="container">
