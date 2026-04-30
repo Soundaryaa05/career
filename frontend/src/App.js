@@ -8,7 +8,7 @@ function App() {
 
   const handleClick = async () => {
     const res = await axios.post(
-      "http://localhost:5000/api/career/recommend",
+      "https://career-backend-v7iz.onrender.com",
       { skills: skills.split(",") }
     );
     setResult(res.data);

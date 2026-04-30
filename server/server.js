@@ -1,10 +1,13 @@
+console.log("MONGO URI:", process.env.MONGO_URI);
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "*"
+}));
 app.use(express.json());
 
 // DB connection
