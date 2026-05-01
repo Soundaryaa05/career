@@ -1,55 +1,57 @@
-# 🚀 Career Recommendation System (MERN Stack)
+# Career Recommendation System (MERN Stack)
 
-## 📌 Overview
-This is a full-stack MERN application that recommends career options based on user skills.  
-Users enter their skills, and the system suggests suitable career paths using backend logic and MongoDB.
+## Overview
+The Career Recommendation System is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js).  
+It analyzes user skills and provides suitable career recommendations based on backend logic and stored data.
 
----
-
-## 🛠️ Tech Stack
-- Frontend: React.js
-- Backend: Node.js, Express.js
-- Database: MongoDB
+This project demonstrates end-to-end integration of frontend, backend, and database components in a scalable web application.
 
 ---
 
-## ⚙️ Features
-- Skill-based career suggestions
-- REST API integration
-- Simple and user-friendly UI
-- Backend data handling using MongoDB
+## Features
+- Skill-based career recommendations  
+- RESTful API integration  
+- Responsive and user-friendly interface  
+- Dynamic data handling using MongoDB  
 
 ---
 
-## 📂 Project Structure
+## Tech Stack
+- Frontend: React.js  
+- Backend: Node.js, Express.js  
+- Database: MongoDB  
+
+---
+
+## Project Structure
 career/
-├── client/     # React frontend  
-├── server/     # Node/Express backend  
-├── .gitignore  
+├── client/     (React frontend)  
+├── server/     (Node.js backend)  
 ├── README.md  
 
 ---
 
-## 🚀 How to Run
+## Installation and Setup
 
-### 1. Clone the repo
+### Clone the repository
 git clone https://github.com/Soundaryaa05/career.git  
 cd career  
 
-### 2. Install dependencies
+### Install dependencies
 cd client  
 npm install  
 
 cd ../server  
 npm install  
 
-### 3. Setup environment variables
+### Environment Variables
 Create a `.env` file inside `server/` and add:
 
 MONGO_URI=your_mongodb_connection  
 PORT=5000  
 
-### 4. Run the project
+### Run the application
+
 Start backend:
 cd server  
 npm start  
@@ -60,7 +62,7 @@ npm start
 
 ---
 
-## 📡 API Example
+## API Example
 
 POST /recommend  
 
@@ -69,18 +71,25 @@ Request:
   "skills": ["JavaScript", "React"]
 }
 
----
-
-## 🎯 Future Improvements
-- Add authentication (login/signup)
-- Improve recommendation logic
-- Deploy project online
+Response:
+{
+  "careers": ["Frontend Developer", "Full Stack Developer"]
+}
 
 ---
 
-## 👩‍💻 Author
-Soundaryaa R
+## Future Improvements
+- Add user authentication  
+- Improve recommendation logic  
+- Deploy application online  
 
 ---
 
-## ⭐ If you like this project, give it a star!
+## Authors
+- Soundaryaa R  
+- Sannidhi Shetty  
+
+---
+
+## License
+This project is developed for educational purposes.
